@@ -1,7 +1,7 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://fjchen.top"
+baseURL = "https://fjchen.me"
 title = "fjchen"
 languageCode = "zh-CN"
 hasCJKLanguage = true
@@ -10,7 +10,7 @@ copyright = "在保留本文作者及本文链接的前提下，非商业用途�
 
 # 主题选择
 # 仓库：https://github.com/reuixiy/hugo-theme-meme
-# 作者的网站：https://io-oi.me/
+# 作者网站：https://io-oi.me/
 # 作者网站的配置：https://github.com/reuixiy/io-oi.me
 theme = "meme"
 
@@ -107,7 +107,7 @@ uglyURLs = false
     # 头像
     avatar = "/images/avatar.jpg"
     # 网站（默认值：baseURL）
-    website = "https://fjchen.top"
+    website = "https://fjchen.me"
     # 推特
     twitter = "fjchen7"
 
@@ -306,7 +306,7 @@ uglyURLs = false
     # 如果否，则会使用你的站点标题作为默认值，并
     # 以文字的形式显示，下方可配置字号和字色。字
     # 体请到底部的字体部分配置。单位：em。
-    siteBrandFontSize = 1.75
+    siteBrandFontSize = 2
     siteBrandFontColor = "var(--color-contrast-high)"
 
 
@@ -366,7 +366,7 @@ uglyURLs = false
     # 说明：用于 JSON-LD、Open Graph
 
     # 站点的描述
-    siteDescription = "fjchen的自留地"
+    siteDescription = "fjchen's blog"
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
 
@@ -588,7 +588,7 @@ uglyURLs = false
     # KaTeX 公式支持（包括化学方程式）
 
     # 是否开启（全局设置）
-    enableKaTeX = true
+    enableKaTeX = false
     # 说明：文章的 Front Matter 中的 `katex`
     #      的优先级高于此处
 
@@ -623,12 +623,12 @@ uglyURLs = false
     # 说明：仅在生产环境（production）下渲染
 
     # 是否开启（全局设置）
-    enableComments = false
+    enableComments = true
     # 说明：文章的 Front Matter 中的 `comments`
     #      的优先级高于此处
 
     # 直接加载评论，不需要手动点击按钮加载
-    autoLoadComments = false
+    autoLoadComments = true
 
     ## Disqus
     enableDisqus = false
@@ -761,7 +761,7 @@ uglyURLs = false
     # 文章元信息
 
     # 是否开启（全局设置）
-    enablePostMeta = false
+    enablePostMeta = true
     # 说明：文章的 Front Matter 中的 `meta`
     #      的优先级高于此处
 
@@ -780,17 +780,17 @@ uglyURLs = false
     publishedDateIcon = "calendar-alt"
 
     # 是否显示修改时间
-    displayModifiedDate = true
+    displayModifiedDate = false
     # 修改时间的图标
     modifiedDateIcon = "calendar-check"
 
     # 是否显示过期时间
-    displayExpiredDate = true
+    displayExpiredDate = false
     # 过期时间的图标
     expiredDateIcon = "calendar-times"
 
     # 是否显示分类
-    displayCategory = true
+    displayCategory = false
     # 分类的图标
     categoryIcon = "folder"
     # 分类之间的分隔符
@@ -940,7 +940,7 @@ uglyURLs = false
 
     ######################################
     # 滚动条
-    customizeScrollbar = true
+    customizeScrollbar = false
 
 
     ######################################
@@ -1033,7 +1033,7 @@ uglyURLs = false
     #      的优先级高于此处
 
     # 是否在每一分隔线之后首字下沉（全局设置）
-    enableDropCapAfterHr = false
+    enableDropCapAfterHr = true
     # 说明：文章的 Front Matter 中的 `dropCapAfterHr`
     #      的优先级高于此处
 
@@ -1108,9 +1108,9 @@ uglyURLs = false
     #      的优先级高于此处
 
     # 仓库地址
-    repoURL = ""
+    repoURL = "https://github.com/fjchen7/blog"
     # 编辑地址
-    repoEditURL = ""
+    repoEditURL = "https://github.com/fjchen7/blog/tree/main"
 
     # Git 的图标
     gitIcon = "code-branch"
@@ -1357,7 +1357,7 @@ uglyURLs = false
     # 平滑滚动
 
     # 是否开启
-    enableSmoothScroll = true
+    enableSmoothScroll = false
 
 
     ######################################
@@ -1370,7 +1370,7 @@ uglyURLs = false
     ######################################
     # Instant Page
 
-    enableInstantPage = true
+    enableInstantPage = false
     # 说明：https://github.com/instantpage/instant.page
 
 
