@@ -6,7 +6,7 @@ title = "fjchen"
 languageCode = "zh-CN"
 hasCJKLanguage = true
 # 版权信息（支持 Markdown）
-copyright = "在保留本文作者及本文链接的前提下，非商业用途随意转载分享。"
+copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)"
 
 # 主题选择
 # 仓库：https://github.com/reuixiy/hugo-theme-meme
@@ -18,8 +18,12 @@ theme = "meme"
 newContentEditor = ""
 
 # i18n
-defaultContentLanguage = "zh"
+defaultContentLanguage = "zh-cn"
 defaultContentLanguageInSubdir = false
+
+# 标题大小写格式
+# https://gohugo.io/getting-started/configuration/#configure-title-case
+titleCaseStyle = "none"
 
 # 是否复数化列表页面的标题
 pluralizeListTitles = false
@@ -39,9 +43,6 @@ enableGitInfo = true
 # 是否生成 robots.txt 文件
 enableRobotsTXT = true
 
-# 每一分页的文章数（仅对「文章摘要」首页布局有效）
-paginate = 5
-
 # URL 相关
 disablePathToLower = false
 relativeURLs = false
@@ -60,6 +61,12 @@ uglyURLs = false
 # 修改时间
 [frontmatter]
     lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
+
+[pagination]
+    disableAliases = false
+    # 每一分页的文章数（仅对「文章摘要」首页布局有效）
+    pagerSize = 5
+    path = 'page'
 
 # Markdown 渲染器
 [markup]
@@ -164,8 +171,7 @@ uglyURLs = false
 
 # RSS & Atom 文章数限制
 [services.rss]
-    limit = 10
-
+    limit = -1
 
 
 ##########################################
@@ -192,12 +198,12 @@ uglyURLs = false
 
 [menu]
     ## 菜单栏
-    # [[menu.main]]
-    #     pageref = "/"
-    #     name = "首页"
-    #     weight = 1
-    #     pre = "internal"
-    #     post = "home"
+    [[menu.main]]
+        pageref = "/"
+        name = "首页"
+        weight = 1
+        pre = "internal"
+        post = "home"
     [[menu.main]]
         pageref = "/posts/"
         name = "文章"
@@ -245,7 +251,6 @@ uglyURLs = false
         weight = 2
         pre = "external"
 
-
     ## 链接栏
     [[menu.links]]
         pageref = "/"
@@ -275,7 +280,7 @@ uglyURLs = false
     # 说明：仅对弹性布局的顶栏有效
 
     # 是否在首页显示
-    displayHeaderInHome = true
+    displayHeaderInHome = false
     # 说明：对弹性布局的顶栏无效
 
     # 背景
@@ -289,7 +294,7 @@ uglyURLs = false
     # 在窄视图下隐藏菜单栏并显示一个按钮？
     enableNavToggle = true
 
-    navHeight = "9em"
+    navHeight = "10em"
     # 说明：菜单栏展开时的高度
 
 
@@ -440,7 +445,7 @@ uglyURLs = false
     # 列表页面
 
     # 宽度
-    listWidth = 38
+    listWidth = 42
     # 说明：如果留空（""），则用 42 作为默认值
     #      单位：em
 
@@ -657,7 +662,7 @@ uglyURLs = false
 
     ## Utterances
     enableUtterances = true
-    utterancesRepo = "fjchen7/fjchen7.github.io"
+    utterancesRepo = "fjchen7/blog"
     utterancesIssueTerm = "pathname"
     utterancesTheme = "github-light"
     utterancesThemeDark = "photon-dark"
@@ -739,7 +744,7 @@ uglyURLs = false
     # 注意：只支持 HSL 颜色值
 
     # 文章的内容宽度
-    postWidth = 38
+    postWidth = 48
     # 说明：如果留空（""），则用 42 作为默认值
     #      单位：em
 
@@ -754,14 +759,13 @@ uglyURLs = false
     # 文章描述
 
     # 是否显示
-    displayPostDescription = true
-
+    displayPostDescription = false
 
     ######################################
     # 文章元信息
 
     # 是否开启（全局设置）
-    enablePostMeta = true
+    enablePostMeta = false
     # 说明：文章的 Front Matter 中的 `meta`
     #      的优先级高于此处
 
@@ -771,7 +775,7 @@ uglyURLs = false
     #      首页布局有效
 
     # 日期格式
-    postMetaDateFormat = "2006.1.2"
+    postMetaDateFormat = "2006-1-2"
     # 注意：请遵循格式 https://gohugo.io/functions/format/
 
     # 是否显示发布时间
@@ -802,7 +806,7 @@ uglyURLs = false
     wordCountIcon = "pencil-alt"
 
     # 是否显示阅读时长
-    displayReadingTime = true
+    displayReadingTime = false
     # 阅读时长的图标
     readingTimeIcon = "clock"
 
@@ -1028,7 +1032,7 @@ uglyURLs = false
     ## 首字下沉
 
     # 是否开启（全局设置）
-    enableDropCap = true
+    enableDropCap = false
     # 说明：文章的 Front Matter 中的 `dropCap`
     #      的优先级高于此处
 
@@ -1313,7 +1317,7 @@ uglyURLs = false
     # 是否开启竖直滚动
     enableOverflowY = false
     # 最大高度
-    maxHeight = 20
+    maxHeight = 28
     # 单位：em
 
     # 是否开启复制
@@ -1357,7 +1361,7 @@ uglyURLs = false
     # 平滑滚动
 
     # 是否开启
-    enableSmoothScroll = false
+    enableSmoothScroll = true
 
 
     ######################################
